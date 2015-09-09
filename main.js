@@ -72,12 +72,6 @@ var buildTray = function() {
 // WINDOW EVENTS
 //
 //
-Ipc.on('track.changed', function(event, trackName) {
-  if (appIcon) {
-    appIcon.setTitle(trackName)
-  }
-})
-
 Ipc.on('select.media', function(event){
 
     dialog.showOpenDialog({ properties: [ 'openDirectory' ]}, function(result) {

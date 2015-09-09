@@ -18,7 +18,6 @@ $('#media-button').on('click', function(e){
 
 });
 
-
 //
 // Electron events
 //
@@ -68,7 +67,9 @@ $('#media-start').on('click', function(e){
     Array.prototype.diff = function(a) {
         return this.filter(function(i) {return a.indexOf(i) < 0;});
     };
-
+    
+    // compare list and extract difs
+    // show results
     console.log("HERE ARE THE RESULTS:")
     console.log(local.diff(found).length)
     console.log(found.diff(local).length)
@@ -95,7 +96,6 @@ $('#media-start').on('click', function(e){
   })
 
 
-  // compare list and extract difs
-  // show results
+
 
 })
