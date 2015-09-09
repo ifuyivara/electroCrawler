@@ -1,0 +1,40 @@
+<html>
+
+  <head>
+    <title>BioWare Site Crawler</title>
+
+    <link rel='stylesheet' href='./app.css'>
+  </head>
+
+  <body>
+    <div class='app-container'>
+      <h1 class='app-title'>
+        BioCrawl
+      </h1>
+
+      <div id='settings'>
+        <div id="media-folder">
+          <label>Select a local folder as your media folder</label>
+          <button type="button" id="media-button">Media Folder</button>
+          <div id="media-folder-value"></div>
+        </div>
+        <div id="website">
+          <label>Type the website you want to crawl</label>
+          <input type="text" name="media-website">
+        </div>
+        <button type="button" id="media-start">Start!</button>
+      </div>
+
+      <ul id='results'>
+        <li>Fetched: <span id="completed-fetched"></span></li>
+        <li>Crawled Items: <span id="completed"></span></li>
+        <li>Media Files: <span id="completed-media"></span></li>
+        <li>Local Files: <span id="local-fetched"></span></li>
+      </ul>
+
+    </div>
+
+    <script src='./app.js'></script>
+  </body>
+
+</html>
